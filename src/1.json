@@ -1,0 +1,44 @@
+[
+ {
+  "parentId": "1",
+  "title": "Мужские кроссовки Nike Blazer Mid Suede",
+  "price": 12999,
+  "imageUrl": "/img/sneakers/1.jpg"
+ },
+ {
+  "parentId": "2",
+  "title": "Мужские кроссовки Nike Air Max 270",
+  "price": 15600,
+  "imageUrl": "/img/sneakers/2.jpg"
+ },
+ {
+  "parentId": "3",
+  "title": "Мужские кроссовки Nike Blazer Mid Suede",
+  "price": 8499,
+  "imageUrl": "/img/sneakers/3.jpg"
+ },
+ {
+  "parentId": "4",
+  "title": "Кроссовки Puma X Aka Boku Future Rider",
+  "price": 8999,
+  "imageUrl": "/img/sneakers/4.jpg"
+ },
+ {
+  "parentId": "5",
+  "title": "Мужские кроссовки Nike Kyrie 7",
+  "price": 5344,
+  "imageUrl": "/img/sneakers/5.jpg"
+ },
+ {
+  "parentId": "6",
+  "title": "Мужские кроссовки Nike Lebron XVIII",
+  "price": 18900,
+  "imageUrl": "/img/sneakers/6.jpg"
+ },
+ {
+  "parentId": "7",
+  "title": "Кроссовки Puma X Aka Boku Future Rider",
+  "price": 7800,
+  "imageUrl": "/img/sneakers/7.jpg"
+ }
+]
