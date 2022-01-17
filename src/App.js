@@ -9,7 +9,7 @@ import Header from './components/Header';
 import Drawer from './components/Drawer/Drawer';
 import { AppContext } from './components/context';
 import database from './components/database';
-import { hideScroll } from './components/function';
+import { hideScroll, showScroll } from './components/function';
 
 function App() {
 
@@ -96,14 +96,14 @@ function App() {
         {cartOpened && <Drawer 
                         onRemoveFromCart={onRemoveFromCart} 
                         onClose={() => {
-                          hideScroll(false);
+                          showScroll();
                           setCartOpened(false);
                         }}
                         cartOpened={cartOpened}
                       />}
         <Header 
           onClickCart={() => {
-            hideScroll(true);
+            hideScroll();
             setCartOpened(true);
           }} 
         />
