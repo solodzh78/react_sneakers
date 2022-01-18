@@ -52,7 +52,7 @@ function Drawer({ onClose, onRemoveFromCart, cartOpened }) {
     >
       <div className={styles.drawer}>
         <h2 className="d-flex justify-between mb-30">
-          Корзина <img onClick={onClickClose} className="cu-p" src="/img/btn-remove.svg" alt="Close" />
+          Корзина <img onClick={onClickClose} className="cu-p" src="img/btn-remove.svg" alt="Close" />
         </h2>
 
         {cartItems.length > 0 ? <><div className={styles.items}>
@@ -67,7 +67,7 @@ function Drawer({ onClose, onRemoveFromCart, cartOpened }) {
                 <p className="mb-5">{obj.title}</p>
                 <b>{obj.price} руб.</b>
               </div>
-              <img onClick={() => onRemoveFromCart(obj.id)} className="removeBtn" src="/img/btn-remove.svg" alt="Remove" />
+              <img onClick={() => onRemoveFromCart(obj.id)} className="removeBtn" src="img/btn-remove.svg" alt="Remove" />
             </div>
           )})}
         </div>
@@ -86,7 +86,7 @@ function Drawer({ onClose, onRemoveFromCart, cartOpened }) {
             </li>
           </ul>
           <button disabled={isLoading} className="greenButton" onClick={makeOrder}>
-            Оформить заказ <img src="/img/arrow.svg" alt="Arrow" />
+            Оформить заказ <img src="img/arrow.svg" alt="Arrow" />
           </button>
         </div></> : 
         <Info

@@ -11,7 +11,7 @@ export const Search = ({ searchTitle, searchValue, setSearchValue }) => {
       <h3>{searchValue ? `Поиск по запросу: "${searchValue}"` : `Все ${searchTitle}`}</h3>
       <div className="search-block d-flex">
         <img 
-          src="/img/search.svg" 
+          src="img/search.svg"
           alt="Search"
         />
         <input 

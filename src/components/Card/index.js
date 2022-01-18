@@ -18,7 +18,7 @@ function Card(props) {
   return (
     <div className={styles.card}>
       <div className={styles.favorite} onClick={onClickFavorite}>
-        <img src={favorited ? "/img/heart-liked.svg" : "/img/heart-unliked.svg"} alt="Unliked" />
+        <img src={favorited ? "img/heart-liked.svg" : "img/heart-unliked.svg"} alt={favorited ? "Liked" : "Unliked"} />
       </div>
       <img width={133} height={112} src={imageUrl} alt="Sneakers" />
       <h5>{title}</h5>
@@ -30,8 +30,8 @@ function Card(props) {
         <img
           className={styles.plus}
           onClick={onClickPlus}
-          src={cartAdded ? '/img/btn-checked.svg' : '/img/btn-plus.svg'}
-          alt="Plus"
+          src={cartAdded ? 'img/btn-checked.svg' : 'img/btn-plus.svg'}
+          alt={cartAdded ? "Added" : "Plus"}
         />
       </div>
     </div>

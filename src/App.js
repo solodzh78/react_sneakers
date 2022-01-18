@@ -25,13 +25,13 @@ function App() {
     const favorites = () => axios.get(`${database}/favorites`);
     const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-    const fetchDataFromDatabase = async() => {
+    (async() => {
 
       try {
         setLoading(true);
         const [itemsResuls, cartResuls, favoritesResuls] = await Promise.all(
           [items(), cart(), favorites(), delay(0)]);
-        
+
         setCartItems(cartResuls.data);
         setFavoriteItems(favoritesResuls.data);
         setItems(itemsResuls.data);
@@ -41,8 +41,8 @@ function App() {
       } finally {
         setLoading(false);
       }
-    };
-    fetchDataFromDatabase();
+    })();
+    // fetchDataFromDatabase();
   }, []);
 
   // React.useEffect(() => document.body.style.overflow = cartOpened ? 'hidden' : '', [cartOpened])
