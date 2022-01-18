@@ -13,8 +13,6 @@ function Card(props) {
     onFavorite({ id, parentId, title, imageUrl, price });
   };
 
-  console.log("Render card " + id);
-
   return (
     <div className={styles.card}>
       <div className={styles.favorite} onClick={onClickFavorite}>
@@ -38,4 +36,4 @@ function Card(props) {
   );
 }
 
-export default React.memo(Card);
+export default Card;
